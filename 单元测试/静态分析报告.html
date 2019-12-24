@@ -1,0 +1,476 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>FindBugs Report</title>
+<style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+		</style>
+</head>
+<body>
+<h1>FindBugs Report</h1>
+<p>Produced using <a href="http://findbugs.sourceforge.net">FindBugs</a>3.0.1.</p>
+<p>Project: 
+			meethere[meethere]</p>
+<h2>Metrics</h2>
+<p>2338 lines of code analyzed,
+	in 73 classes, 
+	in 10 packages.</p>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Metric</th>
+<th align="right">Total</th>
+<th align="right">Density*</th>
+</tr>
+<tr class="tablerow0">
+<td>High Priority Warnings</td>
+<td align="right"/>
+<td align="right">NaN</td>
+</tr>
+<tr class="tablerow1">
+<td>Medium Priority Warnings</td>
+<td align="right">20</td>
+<td align="right">8.55</td>
+</tr>
+<tr class="$totalClass">
+<td>
+<b>Total Warnings</b>
+</td>
+<td align="right">
+<b>20</b>
+</td>
+<td align="right">
+<b>8.55</b>
+</td>
+</tr>
+</table>
+<p>
+<i>(* Defects per Thousand lines of non-commenting source statements)</i>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<h2>Summary</h2>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Warning Type</th>
+<th align="right">Number</th>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+</td>
+<td align="right">4</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_PERFORMANCE">Performance Warnings</a>
+</td>
+<td align="right">15</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_STYLE">Dodgy code Warnings</a>
+</td>
+<td align="right">1</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<b>Total</b>
+</td>
+<td align="right">
+<b>20</b>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h1>Warnings</h1>
+<p>Click on each warning link to see a full description of the issue, and
+	    details of how to resolve it.</p>
+<h2>
+<a name="Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Exceptional return value of java.io.File.mkdirs() ignored in com.meethere.controller.UserController.upload(MultipartFile, HttpSession)<br/>
+<br/>
+<br/>In file UserController.java,
+					
+						line 97<br/>In class com.meethere.controller.UserController<br/>In method com.meethere.controller.UserController.upload(MultipartFile, HttpSession)<br/>Called method java.io.File.mkdirs()<br/>At UserController.java:[line 97]<br/>At UserController.java:[line 97]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Exceptional return value of java.io.File.mkdirs() ignored in com.meethere.controller.VenueImageController.add(int, MultipartFile, HttpServletRequest)<br/>
+<br/>
+<br/>In file VenueImageController.java,
+					
+						line 56<br/>In class com.meethere.controller.VenueImageController<br/>In method com.meethere.controller.VenueImageController.add(int, MultipartFile, HttpServletRequest)<br/>Called method java.io.File.mkdirs()<br/>At VenueImageController.java:[line 56]<br/>At VenueImageController.java:[line 56]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Exceptional return value of java.io.File.delete() ignored in com.meethere.controller.VenueImageController.delete(int, HttpServletRequest)<br/>
+<br/>
+<br/>In file VenueImageController.java,
+					
+						line 89<br/>In class com.meethere.controller.VenueImageController<br/>In method com.meethere.controller.VenueImageController.delete(int, HttpServletRequest)<br/>Called method java.io.File.delete()<br/>At VenueImageController.java:[line 89]<br/>At VenueImageController.java:[line 89]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Exceptional return value of java.io.File.mkdirs() ignored in com.meethere.util.ImageUtil.resizeImage(File, int, int, File)<br/>
+<br/>
+<br/>In file ImageUtil.java,
+					
+						line 42<br/>In class com.meethere.util.ImageUtil<br/>In method com.meethere.util.ImageUtil.resizeImage(File, int, int, File)<br/>Called method java.io.File.mkdirs()<br/>At ImageUtil.java:[line 42]<br/>At ImageUtil.java:[line 42]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_PERFORMANCE">Performance Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#BX_UNBOXING_IMMEDIATELY_REBOXED">Boxed value is unboxed and then immediately reboxed</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Boxed value is unboxed and then immediately reboxed in com.meethere.controller.BookingController.list(Integer, Integer)<br/>
+<br/>
+<br/>In file BookingController.java,
+					
+						line 48<br/>In class com.meethere.controller.BookingController<br/>In method com.meethere.controller.BookingController.list(Integer, Integer)<br/>Called method Integer.valueOf(int)<br/>At BookingController.java:[line 48]<br/>At BookingController.java:[line 48]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#BX_UNBOXING_IMMEDIATELY_REBOXED">Boxed value is unboxed and then immediately reboxed</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Boxed value is unboxed and then immediately reboxed in com.meethere.controller.BookingController.listMyBookings(Booking, Integer, Integer, HttpSession)<br/>
+<br/>
+<br/>In file BookingController.java,
+					
+						line 84<br/>In class com.meethere.controller.BookingController<br/>In method com.meethere.controller.BookingController.listMyBookings(Booking, Integer, Integer, HttpSession)<br/>Called method Integer.valueOf(int)<br/>At BookingController.java:[line 84]<br/>At BookingController.java:[line 84]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#BX_UNBOXING_IMMEDIATELY_REBOXED">Boxed value is unboxed and then immediately reboxed</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Boxed value is unboxed and then immediately reboxed in com.meethere.controller.BookingController.search(Booking, Integer, Integer, Integer)<br/>
+<br/>
+<br/>In file BookingController.java,
+					
+						line 143<br/>In class com.meethere.controller.BookingController<br/>In method com.meethere.controller.BookingController.search(Booking, Integer, Integer, Integer)<br/>Called method Integer.valueOf(int)<br/>At BookingController.java:[line 143]<br/>At BookingController.java:[line 143]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#BX_UNBOXING_IMMEDIATELY_REBOXED">Boxed value is unboxed and then immediately reboxed</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Boxed value is unboxed and then immediately reboxed in com.meethere.controller.DistrictController.list(String, Integer, Integer)<br/>
+<br/>
+<br/>In file DistrictController.java,
+					
+						line 24<br/>In class com.meethere.controller.DistrictController<br/>In method com.meethere.controller.DistrictController.list(String, Integer, Integer)<br/>Called method Integer.valueOf(int)<br/>At DistrictController.java:[line 24]<br/>At DistrictController.java:[line 24]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#BX_UNBOXING_IMMEDIATELY_REBOXED">Boxed value is unboxed and then immediately reboxed</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Boxed value is unboxed and then immediately reboxed in com.meethere.controller.MessageController.list(int, Integer, Integer)<br/>
+<br/>
+<br/>In file MessageController.java,
+					
+						line 30<br/>In class com.meethere.controller.MessageController<br/>In method com.meethere.controller.MessageController.list(int, Integer, Integer)<br/>Called method Integer.valueOf(int)<br/>At MessageController.java:[line 30]<br/>At MessageController.java:[line 30]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#BX_UNBOXING_IMMEDIATELY_REBOXED">Boxed value is unboxed and then immediately reboxed</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Boxed value is unboxed and then immediately reboxed in com.meethere.controller.MessageController.list(Integer, Integer)<br/>
+<br/>
+<br/>In file MessageController.java,
+					
+						line 60<br/>In class com.meethere.controller.MessageController<br/>In method com.meethere.controller.MessageController.list(Integer, Integer)<br/>Called method Integer.valueOf(int)<br/>At MessageController.java:[line 60]<br/>At MessageController.java:[line 60]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#BX_UNBOXING_IMMEDIATELY_REBOXED">Boxed value is unboxed and then immediately reboxed</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Boxed value is unboxed and then immediately reboxed in com.meethere.controller.MessageController.show(int, Integer, Integer)<br/>
+<br/>
+<br/>In file MessageController.java,
+					
+						line 40<br/>In class com.meethere.controller.MessageController<br/>In method com.meethere.controller.MessageController.show(int, Integer, Integer)<br/>Called method Integer.valueOf(int)<br/>At MessageController.java:[line 40]<br/>At MessageController.java:[line 40]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#BX_UNBOXING_IMMEDIATELY_REBOXED">Boxed value is unboxed and then immediately reboxed</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Boxed value is unboxed and then immediately reboxed in com.meethere.controller.NewsController.list(String, Integer, Integer)<br/>
+<br/>
+<br/>In file NewsController.java,
+					
+						line 28<br/>In class com.meethere.controller.NewsController<br/>In method com.meethere.controller.NewsController.list(String, Integer, Integer)<br/>Called method Integer.valueOf(int)<br/>At NewsController.java:[line 28]<br/>At NewsController.java:[line 28]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#BX_UNBOXING_IMMEDIATELY_REBOXED">Boxed value is unboxed and then immediately reboxed</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Boxed value is unboxed and then immediately reboxed in com.meethere.controller.UserController.list(Integer, Integer)<br/>
+<br/>
+<br/>In file UserController.java,
+					
+						line 31<br/>In class com.meethere.controller.UserController<br/>In method com.meethere.controller.UserController.list(Integer, Integer)<br/>Called method Integer.valueOf(int)<br/>At UserController.java:[line 31]<br/>At UserController.java:[line 31]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#BX_UNBOXING_IMMEDIATELY_REBOXED">Boxed value is unboxed and then immediately reboxed</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Boxed value is unboxed and then immediately reboxed in com.meethere.controller.UserController.search(User, Integer, Integer)<br/>
+<br/>
+<br/>In file UserController.java,
+					
+						line 45<br/>In class com.meethere.controller.UserController<br/>In method com.meethere.controller.UserController.search(User, Integer, Integer)<br/>Called method Integer.valueOf(int)<br/>At UserController.java:[line 45]<br/>At UserController.java:[line 45]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#BX_UNBOXING_IMMEDIATELY_REBOXED">Boxed value is unboxed and then immediately reboxed</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Boxed value is unboxed and then immediately reboxed in com.meethere.controller.VenueController.list(int, Integer, Integer)<br/>
+<br/>
+<br/>In file VenueController.java,
+					
+						line 30<br/>In class com.meethere.controller.VenueController<br/>In method com.meethere.controller.VenueController.list(int, Integer, Integer)<br/>Called method Integer.valueOf(int)<br/>At VenueController.java:[line 30]<br/>At VenueController.java:[line 30]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#BX_UNBOXING_IMMEDIATELY_REBOXED">Boxed value is unboxed and then immediately reboxed</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Boxed value is unboxed and then immediately reboxed in com.meethere.controller.VenueController.listAll(Integer, Integer)<br/>
+<br/>
+<br/>In file VenueController.java,
+					
+						line 39<br/>In class com.meethere.controller.VenueController<br/>In method com.meethere.controller.VenueController.listAll(Integer, Integer)<br/>Called method Integer.valueOf(int)<br/>At VenueController.java:[line 39]<br/>At VenueController.java:[line 39]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#BX_UNBOXING_IMMEDIATELY_REBOXED">Boxed value is unboxed and then immediately reboxed</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Boxed value is unboxed and then immediately reboxed in com.meethere.controller.VenueController.search2(int, String, String, Integer, Integer, Integer, Integer)<br/>
+<br/>
+<br/>In file VenueController.java,
+					
+						line 56<br/>In class com.meethere.controller.VenueController<br/>In method com.meethere.controller.VenueController.search2(int, String, String, Integer, Integer, Integer, Integer)<br/>Called method Integer.valueOf(int)<br/>At VenueController.java:[line 56]<br/>At VenueController.java:[line 56]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#BX_UNBOXING_IMMEDIATELY_REBOXED">Boxed value is unboxed and then immediately reboxed</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Boxed value is unboxed and then immediately reboxed in com.meethere.controller.VenueController.search3(int, String, Integer, Integer, Integer, Integer)<br/>
+<br/>
+<br/>In file VenueController.java,
+					
+						line 73<br/>In class com.meethere.controller.VenueController<br/>In method com.meethere.controller.VenueController.search3(int, String, Integer, Integer, Integer, Integer)<br/>Called method Integer.valueOf(int)<br/>At VenueController.java:[line 73]<br/>At VenueController.java:[line 73]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#URF_UNREAD_FIELD">Unread field</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unread field: com.meethere.util.Page4Navigator.pageFromJPA<br/>
+<br/>
+<br/>In file Page4Navigator.java,
+					
+						line 40<br/>In class com.meethere.util.Page4Navigator<br/>Field com.meethere.util.Page4Navigator.pageFromJPA<br/>At Page4Navigator.java:[line 40]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_STYLE">Dodgy code Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DMI_HARDCODED_ABSOLUTE_FILENAME">Code contains a hard coded reference to an absolute pathname</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Hard coded reference to an absolute pathname in com.meethere.controller.UserController.upload(MultipartFile, HttpSession)<br/>
+<br/>
+<br/>In file UserController.java,
+					
+						line 106<br/>In class com.meethere.controller.UserController<br/>In method com.meethere.controller.UserController.upload(MultipartFile, HttpSession)<br/>File name D:/workspace/meethere/src/main/webapp/img/faceImage_small<br/>At UserController.java:[line 106]<br/>At UserController.java:[line 106]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<h1>
+<a name="Details">Warning Types</a>
+</h1>
+<h2>
+<a name="BX_UNBOXING_IMMEDIATELY_REBOXED">Boxed value is unboxed and then immediately reboxed</a>
+</h2>
+
+  <p>A boxed value is unboxed and then immediately reboxed.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="DMI_HARDCODED_ABSOLUTE_FILENAME">Code contains a hard coded reference to an absolute pathname</a>
+</h2>
+
+<p>This code constructs a File object using a hard coded to an absolute pathname
+(e.g., <code>new File("/home/dannyc/workspace/j2ee/src/share/com/sun/enterprise/deployment");</code>
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+</h2>
+
+   <p> This method returns a value that is not checked. The return value should be checked
+since it can indicate an unusual or unexpected function execution. For
+example, the <code>File.delete()</code> method returns false
+if the file could not be successfully deleted (rather than
+throwing an Exception).
+If you don't check the result, you won't notice if the method invocation
+signals unexpected behavior by returning an atypical return value.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="URF_UNREAD_FIELD">Unread field</a>
+</h2>
+
+  <p> This field is never read.&nbsp; Consider removing it from the class.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+</body>
+</html>

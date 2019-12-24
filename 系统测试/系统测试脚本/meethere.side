@@ -1,0 +1,3101 @@
+{
+  "id": "5556ccef-4aad-47bf-8b7a-9b3ccb7540a4",
+  "version": "2.0",
+  "name": "meethere",
+  "url": "http://localhost:8080/meethere",
+  "tests": [{
+    "id": "3013e794-f992-40c5-8833-8a7fafdc8ba2",
+    "name": "UserLogin",
+    "commands": [{
+      "id": "794458b0-9a63-477c-a68d-31b382d4f7f1",
+      "comment": "",
+      "command": "open",
+      "target": "/meethere/first",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30839b63-a85c-4385-b82f-f002df16959e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1249x814",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f42acc9-63c9-4e57-8dab-9b5803b93648",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a927396b-9e9a-4814-ae80-fd3c12f13dfd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=用户",
+      "targets": [
+        ["linkText=用户", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'用户')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8080/meethere/login']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'用户')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e4eafd6-858b-4ff2-ad7f-5290e0c12e68",
+      "comment": "",
+      "command": "click",
+      "target": "css=.loginInput:nth-child(3)",
+      "targets": [
+        ["css=.loginInput:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='loginSmallDiv']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4accc78-75e3-415a-836d-a6c6f2c441f5",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginSmallDiv",
+      "targets": [
+        ["id=loginSmallDiv", "id"],
+        ["css=#loginSmallDiv", "css:finder"],
+        ["xpath=//div[@id='loginSmallDiv']", "xpath:attributes"],
+        ["xpath=//div[@id='loginDiv']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d13ba56f-5bee-4b59-bf4d-2e261ff98ca2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.loginInput:nth-child(4)",
+      "targets": [
+        ["css=.loginInput:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='loginSmallDiv']/div[4]", "xpath:idRelative"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc5d18c4-a763-499c-b182-99102adb8cca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'登录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "297af91f-5b04-4549-a6ef-48798b632fe2",
+    "name": "AdminLogin",
+    "commands": [{
+      "id": "dad1c18f-a36f-4e8a-ad43-6a1f4cc5ad5c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/meethere/first",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c7d5260-2685-418d-aa22-445e37676498",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa990a42-0b2c-416c-8c02-e6cfdd8cf962",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=管理员",
+      "targets": [
+        ["linkText=管理员", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'管理员')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8080/meethere/alogin']", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'管理员')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "27174cf2-4e9c-4d26-9129-1e5c22693474",
+      "comment": "",
+      "command": "click",
+      "target": "css=.loginInput:nth-child(3)",
+      "targets": [
+        ["css=.loginInput:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='loginSmallDiv']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "793c18ec-b4c2-4ece-b7c6-7134f860a64a",
+      "comment": "",
+      "command": "type",
+      "target": "css=.loginInput:nth-child(3) > input",
+      "targets": [
+        ["css=.loginInput:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "09ea9f4d-9802-4c78-8855-a8e0c91d029c",
+      "comment": "",
+      "command": "click",
+      "target": "css=video",
+      "targets": [
+        ["css=video", "css:finder"],
+        ["xpath=//div[@id='video-container']/video", "xpath:idRelative"],
+        ["xpath=//video", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46c73bf2-64e5-4cb0-8a6f-9851c058a149",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parentDiv",
+      "targets": [
+        ["css=.parentDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "becaf4e0-2864-4f95-9d43-63ff531c52ca",
+      "comment": "",
+      "command": "type",
+      "target": "css=.loginInput:nth-child(4) > input",
+      "targets": [
+        ["css=.loginInput:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "8acb6fbc-b353-4886-a122-fd1c9faa0685",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'登录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "69ef68e0-689e-409a-af24-8c63534c3b64",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cee97da3-2c27-41ba-a5a7-ba80eb6da707",
+    "name": "UserViewNews",
+    "commands": [{
+      "id": "a6fe3e9d-ceba-4565-a59c-81060b9b637f",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/meethere/first",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45103333-ba39-4bd6-b796-9899e05718b0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1249x814",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3cb5210c-f2c3-4522-a0c0-987225200614",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7649ace2-3177-4c6c-b352-535d9936075e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=用户",
+      "targets": [
+        ["linkText=用户", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'用户')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8080/meethere/login']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'用户')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3ef5a88-d969-4f9c-9a07-b2a756ca19ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'登录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b57d7b8-d0b7-44b0-b5a4-f91778fab984",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=新闻",
+      "targets": [
+        ["linkText=新闻", "linkText"],
+        ["css=li:nth-child(3) > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'新闻')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[4]/div/div/nav/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'forenews')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'新闻')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7c70e4e-f044-4702-8e63-173095577023",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=新闻一",
+      "targets": [
+        ["linkText=新闻一", "linkText"],
+        ["css=div:nth-child(1) > li > a", "css:finder"],
+        ["xpath=//a[contains(text(),'新闻一')]", "xpath:link"],
+        ["xpath=//div[@id='workingArea']/div/div[3]/div[2]/div/ul/div/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'new?id=5')]", "xpath:href"],
+        ["xpath=//div/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'   新闻一')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d45323d-34ca-46cb-bc67-6c6b0c6172b7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b2800f64-1c77-40f1-8c22-7c799c8ddef0",
+    "name": "UserSearchVenue",
+    "commands": [{
+      "id": "431e64ae-6cef-47a5-a32e-8df8b59e0f3d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/meethere/first",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "063bd78c-3722-4f99-9d1c-8a902f02cf98",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1249x814",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "560564d5-7727-4eb7-b10e-a480b85b467f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d9cc35b-b2bf-4d3d-9ffa-6016b4c336f0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=用户",
+      "targets": [
+        ["linkText=用户", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'用户')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8080/meethere/login']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'用户')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "146b7a78-bb17-478a-9298-933912c3eab3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.loginInput:nth-child(3)",
+      "targets": [
+        ["css=.loginInput:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='loginSmallDiv']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfa95c33-b7f4-4a82-9dcd-2fa48b5dc5f8",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginSmallDiv",
+      "targets": [
+        ["id=loginSmallDiv", "id"],
+        ["css=#loginSmallDiv", "css:finder"],
+        ["xpath=//div[@id='loginSmallDiv']", "xpath:attributes"],
+        ["xpath=//div[@id='loginDiv']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22e717c8-54ae-4440-a015-098e4440d99e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parentDiv",
+      "targets": [
+        ["css=.parentDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2deb4dd-c4ff-4325-9042-90357597f8aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'登录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9b295f6-b2ac-4611-97e0-f26ac727ca36",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=场馆",
+      "targets": [
+        ["linkText=场馆", "linkText"],
+        ["css=li:nth-child(2) > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'场馆')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[4]/div/div/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'forevenues')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'场馆')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ca89585-2e07-40b8-882d-9cbc1e99be87",
+      "comment": "",
+      "command": "click",
+      "target": "css=div > input",
+      "targets": [
+        ["css=div > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div[3]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d501b904-a609-45d6-a70a-63df1d26f111",
+      "comment": "",
+      "command": "type",
+      "target": "css=div > input",
+      "targets": [
+        ["css=div > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div[3]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "b6d950bf-1bc3-4313-a6cf-0cc1baff0a96",
+      "comment": "",
+      "command": "click",
+      "target": "css=.searchButton",
+      "targets": [
+        ["css=.searchButton", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div[3]/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'搜索')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd058e2d-ae05-4c89-8b27-13238cb54041",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "17e0319f-e715-4ac2-b1da-e8be5b7b095a",
+    "name": "UserRegister",
+    "commands": [{
+      "id": "32dc985c-36af-4c72-80cc-207c7a2fde3e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/meethere/first",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd706fed-1381-452f-a81d-b74d6054cdcf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05fda0eb-c9b8-4acb-a5aa-df488af51854",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "linkText=用户",
+      "targets": [
+        ["linkText=用户", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'用户')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8080/meethere/login']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'用户')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4134097b-502e-43b2-af07-a29e73c2528d",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'用户')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "016b4266-02a3-405c-a2ee-e14cbccc92c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'用户')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf0c3514-f4e2-4666-866f-7d367a57c9ce",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=用户",
+      "targets": [
+        ["linkText=用户", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'用户')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8080/meethere/login']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'用户')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "41a9d0e8-821f-45e7-8acf-d02eeadc1e1b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=免费注册",
+      "targets": [
+        ["linkText=免费注册", "linkText"],
+        ["css=.pull-right", "css:finder"],
+        ["xpath=//a[contains(text(),'免费注册')]", "xpath:link"],
+        ["xpath=//div[@id='loginSmallDiv']/div[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'register')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'免费注册')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "83a95634-4f00-4bc2-9d8e-3f3bb3d9b807",
+      "comment": "",
+      "command": "click",
+      "target": "css=.registerDiv > div:nth-child(2)",
+      "targets": [
+        ["css=.registerDiv > div:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93b2cfca-2e62-4d11-b606-cadf372d6f0d",
+      "comment": "",
+      "command": "type",
+      "target": "css=div:nth-child(2) > .form-control",
+      "targets": [
+        ["css=div:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "example1"
+    }, {
+      "id": "93eec2f1-65e7-44fa-9ee3-fe10a957741f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parentDiv",
+      "targets": [
+        ["css=.parentDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c598ee61-8270-4322-93a1-fa03e971b8da",
+      "comment": "",
+      "command": "type",
+      "target": "css=div:nth-child(4) > .form-control:nth-child(2)",
+      "targets": [
+        ["css=div:nth-child(4) > .form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "example1"
+    }, {
+      "id": "e5d5440f-d889-49b1-abd2-bf98d12c9d47",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control:nth-child(5)",
+      "targets": [
+        ["css=.form-control:nth-child(5)", "css:finder"],
+        ["xpath=(//input[@type='password'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "564f15be-f13c-4351-af21-ce77ab612fd2",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control:nth-child(5)",
+      "targets": [
+        ["css=.form-control:nth-child(5)", "css:finder"],
+        ["xpath=(//input[@type='password'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "example1"
+    }, {
+      "id": "f9111565-afbc-485b-bc28-5cb0ef9ab0b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/a/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f87a5ba-1bc6-4a0c-9bba-bed06af52eef",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0e26766b-1e9a-43b4-b98d-ff6f5760f6d4",
+    "name": "UserViewVenue",
+    "commands": [{
+      "id": "929c63aa-c561-49fa-bb68-651ffa7d8e3b",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/meethere/first",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2984e6e3-4d58-464a-9a27-fae25f97bf4a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1249x814",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad081a8b-ce63-4ab8-9dc2-0cd590cf3eb0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7e07311-ef27-40c8-baea-f253ef72c4f8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=用户",
+      "targets": [
+        ["linkText=用户", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'用户')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8080/meethere/login']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'用户')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6ffcaff-7f75-4828-b3f4-fb057399852a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'登录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e604b25-a54c-4ba0-8d0c-43259fb7c049",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=场馆",
+      "targets": [
+        ["linkText=场馆", "linkText"],
+        ["css=li:nth-child(2) > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'场馆')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[4]/div/div/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'forevenues')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'场馆')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2bcc72b-1a8c-4c3a-adda-e824a404d22b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product-wrapper:nth-child(3) img",
+      "targets": [
+        ["css=.product-wrapper:nth-child(3) img", "css:finder"],
+        ["xpath=//img[@alt='image']", "xpath:img"],
+        ["xpath=//div[@id='workingArea']/div/div[3]/div/div[3]/a/div/img", "xpath:idRelative"],
+        ["xpath=//a/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6a57fbd-6e21-411b-976d-fbbbe020cbf8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "76548944-3244-47bb-b820-0f683aac1d66",
+    "name": "AdminViewDistrict",
+    "commands": [{
+      "id": "77585166-7a55-4b6d-8ebb-84f722c0c873",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/meethere/first",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d568683-a267-4ca1-bb15-5230a7f78a42",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1249x814",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4720a1e1-0148-4c90-bf62-25e6c99d3e57",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "660fe91d-ba9a-43fe-afaf-aec1be69b617",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=管理员",
+      "targets": [
+        ["linkText=管理员", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'管理员')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8080/meethere/alogin']", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'管理员')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1642f9dc-483b-4fff-a3fb-bd436279032a",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.glyphicon-user",
+      "targets": [
+        ["css=.glyphicon-user", "css:finder"],
+        ["xpath=//div[@id='loginSmallDiv']/div[3]/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": "5.859375,17"
+    }, {
+      "id": "7d4bdf8a-dcfc-4332-8a8f-c7638aa3bd1e",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.glyphicon-user",
+      "targets": [
+        ["css=.glyphicon-user", "css:finder"],
+        ["xpath=//div[@id='loginSmallDiv']/div[3]/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": "5.859375,17"
+    }, {
+      "id": "cdc52938-2894-4f98-8b39-54ea0093f826",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.glyphicon-user",
+      "targets": [
+        ["css=.glyphicon-user", "css:finder"],
+        ["xpath=//div[@id='loginSmallDiv']/div[3]/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": "5.859375,17"
+    }, {
+      "id": "9fc9b262-b969-437a-a7ed-beef25976411",
+      "comment": "",
+      "command": "click",
+      "target": "css=.loginInput:nth-child(3)",
+      "targets": [
+        ["css=.loginInput:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='loginSmallDiv']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4304e3e-cfbc-4e5f-a1d9-4d951667a884",
+      "comment": "",
+      "command": "type",
+      "target": "css=.loginInput:nth-child(3) > input",
+      "targets": [
+        ["css=.loginInput:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "4b20041a-0cc9-49d9-96c8-86c771e76d81",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginSmallDiv",
+      "targets": [
+        ["id=loginSmallDiv", "id"],
+        ["css=#loginSmallDiv", "css:finder"],
+        ["xpath=//div[@id='loginSmallDiv']", "xpath:attributes"],
+        ["xpath=//div[@id='loginDiv']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d6f6269-20c3-46fb-9ea5-508ceb6790df",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parentDiv",
+      "targets": [
+        ["css=.parentDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d3d7662-b4e2-4a25-963a-b8a87ba9cf98",
+      "comment": "",
+      "command": "type",
+      "target": "css=.loginInput:nth-child(4) > input",
+      "targets": [
+        ["css=.loginInput:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "63ee1052-15a7-4323-bda9-4ddf8da5d027",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'登录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eea7c7b8-3b42-4371-97bd-f4529c6a26d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=div > input",
+      "targets": [
+        ["css=div > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div[3]/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6884ae75-4121-43ca-8c04-821ef99e118f",
+      "comment": "",
+      "command": "type",
+      "target": "css=div > input",
+      "targets": [
+        ["css=div > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div[3]/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "桃"
+    }, {
+      "id": "2a67d7b8-3915-404d-9b00-cfab10435ad4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.searchButton",
+      "targets": [
+        ["css=.searchButton", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div[3]/div[2]/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'搜索')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a97a7f91-fb04-49c2-97aa-fb303598fa49",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a5407df0-f7e3-4ccd-affe-7f53c05b0143",
+    "name": "AdminAddVenue",
+    "commands": [{
+      "id": "fdcbee3b-2f17-45e6-9570-9693477f8fac",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/meethere/first",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75d2219b-3007-4508-9a21-10993c5f49ee",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1249x814",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2ccc6fd-d54c-4031-8c91-26e2490c0bf0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dee31230-824a-43e4-a9de-cfc614bd4779",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=管理员",
+      "targets": [
+        ["linkText=管理员", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'管理员')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8080/meethere/alogin']", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'管理员')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e66a9b44-8215-4b53-bf35-55f46609113b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parentDiv",
+      "targets": [
+        ["css=.parentDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d783286-403a-4162-8661-eb8a4a2dd486",
+      "comment": "",
+      "command": "type",
+      "target": "css=.loginInput:nth-child(3) > input",
+      "targets": [
+        ["css=.loginInput:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "e5a0c31f-4601-4dcb-8c82-5078368d813c",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginSmallDiv",
+      "targets": [
+        ["id=loginSmallDiv", "id"],
+        ["css=#loginSmallDiv", "css:finder"],
+        ["xpath=//div[@id='loginSmallDiv']", "xpath:attributes"],
+        ["xpath=//div[@id='loginDiv']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5833c1ed-7b9f-4758-8820-41a360fae241",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parentDiv",
+      "targets": [
+        ["css=.parentDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23f4d909-5a80-479f-ad68-fe60cb2b79bc",
+      "comment": "",
+      "command": "type",
+      "target": "css=.loginInput:nth-child(4) > input",
+      "targets": [
+        ["css=.loginInput:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "0d165a22-b597-42ae-80b1-9ef0c6b31048",
+      "comment": "",
+      "command": "click",
+      "target": "css=video",
+      "targets": [
+        ["css=video", "css:finder"],
+        ["xpath=//div[@id='video-container']/video", "xpath:idRelative"],
+        ["xpath=//video", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55c3f813-4e37-4261-a609-f05470c0341a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'登录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f6c8dd0-350c-45db-955a-5ab5b83e5b94",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(1) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div[3]/div[3]/table/tbody/tr/td[3]", "xpath:idRelative"],
+        ["xpath=//td[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03f61c3d-48ed-4aa1-8298-ce10934bc108",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .glyphicon-shopping-cart",
+      "targets": [
+        ["css=tr:nth-child(1) .glyphicon-shopping-cart", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div[3]/div[3]/table/tbody/tr/td[3]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd56c43a-bc09-44a7-a524-137485f66b10",
+      "comment": "",
+      "command": "click",
+      "target": "css=.addTable tr:nth-child(2) > td:nth-child(2)",
+      "targets": [
+        ["css=.addTable tr:nth-child(2) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div[5]/div[5]/div[2]/table/tbody/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/table/tbody/tr[2]/td[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "060ae306-dabf-4639-878a-3b72a0a42a6f",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .form-control",
+      "targets": [
+        ["css=tr:nth-child(1) .form-control", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div[5]/div[5]/div[2]/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea81bcab-02dd-4994-93f0-3d5ad93bb512",
+      "comment": "",
+      "command": "type",
+      "target": "css=tr:nth-child(1) .form-control",
+      "targets": [
+        ["css=tr:nth-child(1) .form-control", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div[5]/div[5]/div[2]/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "场馆一"
+    }, {
+      "id": "da780813-1514-4bdc-a21e-12f26685684a",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) .form-control",
+      "targets": [
+        ["css=tr:nth-child(3) .form-control", "css:finder"],
+        ["xpath=//input[@type='number']", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div[5]/div[5]/div[2]/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb46cd4c-488a-43e4-a623-7d42766fc290",
+      "comment": "",
+      "command": "type",
+      "target": "css=tr:nth-child(3) .form-control",
+      "targets": [
+        ["css=tr:nth-child(3) .form-control", "css:finder"],
+        ["xpath=//input[@type='number']", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div[5]/div[5]/div[2]/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "5fdaa903-2729-4310-8034-10bed2aa59ba",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) .form-control",
+      "targets": [
+        ["css=tr:nth-child(4) .form-control", "css:finder"],
+        ["xpath=(//input[@type='number'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div[5]/div[5]/div[2]/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "393f8a91-de54-4295-9f4f-e3a68e34bfb5",
+      "comment": "",
+      "command": "type",
+      "target": "css=tr:nth-child(4) .form-control",
+      "targets": [
+        ["css=tr:nth-child(4) .form-control", "css:finder"],
+        ["xpath=(//input[@type='number'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div[5]/div[5]/div[2]/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "8a75b513-98c1-4ec2-9c93-aa5d8a63df55",
+      "comment": "",
+      "command": "click",
+      "target": "css=div > .form-control:nth-child(1)",
+      "targets": [
+        ["css=div > .form-control:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div[5]/div[5]/div[2]/table/tbody/tr[5]/td[2]/div/input", "xpath:idRelative"],
+        ["xpath=//td[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2ee48e5-68da-4d03-b153-ce8ddc7caf21",
+      "comment": "",
+      "command": "type",
+      "target": "css=div > .form-control:nth-child(1)",
+      "targets": [
+        ["css=div > .form-control:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div[5]/div[5]/div[2]/table/tbody/tr[5]/td[2]/div/input", "xpath:idRelative"],
+        ["xpath=//td[2]/div/input", "xpath:position"]
+      ],
+      "value": "9"
+    }, {
+      "id": "0f761768-3a9b-471f-a372-0111f8c0548a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control:nth-child(2)",
+      "targets": [
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div[5]/div[5]/div[2]/table/tbody/tr[5]/td[2]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8a56720-3ea2-4068-9a77-6b8bd6fdb465",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control:nth-child(2)",
+      "targets": [
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div[5]/div[5]/div[2]/table/tbody/tr[5]/td[2]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "19"
+    }, {
+      "id": "b4ab9d6a-6783-4384-a68f-52d0661bd67a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=提交",
+      "targets": [
+        ["linkText=提交", "linkText"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//a[contains(text(),'提交')]", "xpath:link"],
+        ["xpath=//div[@id='workingArea']/div/div[5]/div[5]/div[2]/table/tbody/tr[8]/td/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#nowhere')])[9]", "xpath:href"],
+        ["xpath=//tr[8]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'提交')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a56ffdb3-a5f2-421a-b3bf-c3c4e7df1e15",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) .form-control",
+      "targets": [
+        ["css=tr:nth-child(3) .form-control", "css:finder"],
+        ["xpath=//input[@type='number']", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div[5]/div[5]/div[2]/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c0492cc-24e9-49ff-832c-753a66c26c79",
+      "comment": "",
+      "command": "type",
+      "target": "css=tr:nth-child(3) .form-control",
+      "targets": [
+        ["css=tr:nth-child(3) .form-control", "css:finder"],
+        ["xpath=//input[@type='number']", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div[5]/div[5]/div[2]/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "11"
+    }, {
+      "id": "01e41d1e-308e-47cf-87ab-138b397ce1e5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=提交",
+      "targets": [
+        ["linkText=提交", "linkText"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//a[contains(text(),'提交')]", "xpath:link"],
+        ["xpath=//div[@id='workingArea']/div/div[5]/div[5]/div[2]/table/tbody/tr[8]/td/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#nowhere')])[9]", "xpath:href"],
+        ["xpath=//tr[8]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'提交')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "544f3fc4-0029-4dbf-b86e-70d28c6e18a2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=提交",
+      "targets": [
+        ["linkText=提交", "linkText"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//a[contains(text(),'提交')]", "xpath:link"],
+        ["xpath=//div[@id='workingArea']/div/div[5]/div[5]/div[2]/table/tbody/tr[8]/td/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#nowhere')])[9]", "xpath:href"],
+        ["xpath=//tr[8]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'提交')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b50013e-036a-42eb-8fff-4ca7f9d80cda",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=提交",
+      "targets": [
+        ["linkText=提交", "linkText"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//a[contains(text(),'提交')]", "xpath:link"],
+        ["xpath=//div[@id='workingArea']/div/div[5]/div[5]/div[2]/table/tbody/tr[8]/td/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#nowhere')])[10]", "xpath:href"],
+        ["xpath=//tr[8]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'提交')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "83e07b59-1a55-49cc-8afd-f262c346d3ce",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a84f4529-b4c4-4afc-a2ca-c13213eecda8",
+    "name": "user_register_1",
+    "commands": [{
+      "id": "6c1c35c2-9921-46b6-9e88-a92da6a76c77",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/meethere/first",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ac6a079-853b-4dde-99ee-87c624030c83",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1249x814",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99e063a4-0655-4381-90d7-20f47dba924f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon > span",
+      "targets": [
+        ["css=.menu-icon > span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81f632b7-0295-4566-ab0c-ad2efdedd67e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=用户",
+      "targets": [
+        ["linkText=用户", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'用户')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8080/meethere/login']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'用户')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f962208b-36b5-4b51-9498-05d3b39b7217",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=免费注册",
+      "targets": [
+        ["linkText=免费注册", "linkText"],
+        ["css=.pull-right", "css:finder"],
+        ["xpath=//a[contains(text(),'免费注册')]", "xpath:link"],
+        ["xpath=//div[@id='loginSmallDiv']/div[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'register')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'免费注册')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8d35e97-94d7-4e6e-9b92-301537bc9135",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=img",
+      "targets": [
+        ["css=img", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": "432,219"
+    }, {
+      "id": "a4155dfc-0d3e-4565-9177-0671ada54864",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=img",
+      "targets": [
+        ["css=img", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": "432,219"
+    }, {
+      "id": "d18325f7-91a1-4a53-83ae-f2caabd7d762",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=img",
+      "targets": [
+        ["css=img", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": "432,219"
+    }, {
+      "id": "8166388a-0d7e-4a24-9e83-c8f050b5dc7e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parentDiv",
+      "targets": [
+        ["css=.parentDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e4790c2-2f83-4518-b0ec-a332cf2c9b68",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parentDiv",
+      "targets": [
+        ["css=.parentDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a2b091b-0113-4008-8203-966439b054e0",
+      "comment": "",
+      "command": "type",
+      "target": "css=div:nth-child(2) > .form-control",
+      "targets": [
+        ["css=div:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test5"
+    }, {
+      "id": "c3a534e1-84dc-4bc2-8bae-8a6580cd6a59",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parentDiv",
+      "targets": [
+        ["css=.parentDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b44da6e-5d83-4aae-89e5-5dbac5ac67b0",
+      "comment": "",
+      "command": "type",
+      "target": "css=div:nth-child(4) > .form-control:nth-child(2)",
+      "targets": [
+        ["css=div:nth-child(4) > .form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "8775c003-eaf5-4a96-9c30-77372903d482",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control:nth-child(5)",
+      "targets": [
+        ["css=.form-control:nth-child(5)", "css:finder"],
+        ["xpath=(//input[@type='password'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37a9334d-0499-4b1a-9875-2918d360d47f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control:nth-child(5)",
+      "targets": [
+        ["css=.form-control:nth-child(5)", "css:finder"],
+        ["xpath=(//input[@type='password'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "141f18a2-09d8-4468-b100-b665efa10a20",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/a/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "305b7dfe-c23a-49d9-bc46-10488080f6d9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8d0bbb58-f101-4812-bd82-96324e7188bf",
+    "name": "user_register_2",
+    "commands": [{
+      "id": "a2f55a72-4886-46c4-adbc-551f32f8ab85",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/meethere/first",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9636230f-cb47-4185-b964-b04ed5dfeb88",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1249x814",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ffa09419-021a-435b-a5a2-3ac5d52e2d5b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa952c01-ac01-42ea-a232-9137ebccb837",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=用户",
+      "targets": [
+        ["linkText=用户", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'用户')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8080/meethere/login']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'用户')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cfd84b9-bbf6-41a7-bcd6-5cd6c95d4b1c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=免费注册",
+      "targets": [
+        ["linkText=免费注册", "linkText"],
+        ["css=.pull-right", "css:finder"],
+        ["xpath=//a[contains(text(),'免费注册')]", "xpath:link"],
+        ["xpath=//div[@id='loginSmallDiv']/div[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'register')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'免费注册')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "59041a3f-c970-4a99-8eec-855f418cd672",
+      "comment": "",
+      "command": "click",
+      "target": "css=.registerDiv",
+      "targets": [
+        ["css=.registerDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ea163f9-d3a6-461f-ae6c-469134e8ffc9",
+      "comment": "",
+      "command": "type",
+      "target": "css=div:nth-child(2) > .form-control",
+      "targets": [
+        ["css=div:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "error"
+    }, {
+      "id": "eeec18a9-5705-4404-a18c-b5a31a9aa07c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parentDiv",
+      "targets": [
+        ["css=.parentDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdc6d09e-dd4b-4975-95ed-d725764a6922",
+      "comment": "",
+      "command": "type",
+      "target": "css=div:nth-child(4) > .form-control:nth-child(2)",
+      "targets": [
+        ["css=div:nth-child(4) > .form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "eb417cdb-7694-4d98-bc3d-7ef7755a9e9a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control:nth-child(5)",
+      "targets": [
+        ["css=.form-control:nth-child(5)", "css:finder"],
+        ["xpath=(//input[@type='password'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19ae6c23-2fcc-4d51-9b90-75abd8e85a0e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control:nth-child(5)",
+      "targets": [
+        ["css=.form-control:nth-child(5)", "css:finder"],
+        ["xpath=(//input[@type='password'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "654321"
+    }, {
+      "id": "4960a24f-18e5-4e52-8ce4-023b7da3b12a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/a/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0826bf55-a0ea-4f2d-9819-4492648900d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parentDiv",
+      "targets": [
+        ["css=.parentDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1013510-6870-45d3-95c7-ff079f129b33",
+      "comment": "",
+      "command": "click",
+      "target": "css=img",
+      "targets": [
+        ["css=img", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f6f6a57-fafd-4853-ba5e-4f43eeb2d191",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f7840b47-2e88-4d69-ab73-390ee1a8c410",
+    "name": "user_register_3",
+    "commands": [{
+      "id": "c6b5676d-3bf7-47e1-bd42-761d33e292a6",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/meethere/first",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "249eac8f-93b7-4ecd-a5a7-08c465ffb352",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1249x814",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "953691da-894b-4730-952e-cf9cf8adfcf1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "334b8873-9117-4a1d-86c6-c6c6974ad356",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=用户",
+      "targets": [
+        ["linkText=用户", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'用户')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8080/meethere/login']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'用户')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a7cedec-0585-44f5-bfa6-cfbce7f65b33",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=免费注册",
+      "targets": [
+        ["linkText=免费注册", "linkText"],
+        ["css=.pull-right", "css:finder"],
+        ["xpath=//a[contains(text(),'免费注册')]", "xpath:link"],
+        ["xpath=//div[@id='loginSmallDiv']/div[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'register')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'免费注册')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5131082-be2c-4b95-9356-1ce13e4f78ea",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.registerDiv",
+      "targets": [
+        ["css=.registerDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": "0.859375,148"
+    }, {
+      "id": "e79b7b49-63a1-4f1f-b8ff-177469d8ef99",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.registerDiv",
+      "targets": [
+        ["css=.registerDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": "0.859375,148"
+    }, {
+      "id": "46429b20-f796-4fe5-aabe-339d38a89a33",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.registerDiv",
+      "targets": [
+        ["css=.registerDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": "0.859375,148"
+    }, {
+      "id": "5d69fdb8-d79b-45a2-9a7a-45932c815cc4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.registerDiv",
+      "targets": [
+        ["css=.registerDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "535dc429-bcdf-4f4f-b29a-00b4fc19153a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parentDiv",
+      "targets": [
+        ["css=.parentDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebb1959a-279d-478a-8310-10c3b7be102f",
+      "comment": "",
+      "command": "type",
+      "target": "css=div:nth-child(2) > .form-control",
+      "targets": [
+        ["css=div:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "error"
+    }, {
+      "id": "15e0badb-f098-4b61-85df-65f5e7f13259",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(4) > .form-control:nth-child(2)",
+      "targets": [
+        ["css=div:nth-child(4) > .form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07c6337d-2a88-4752-986a-9842876f1405",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parentDiv",
+      "targets": [
+        ["css=.parentDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60967e41-6e40-42f5-902e-0dac28016662",
+      "comment": "",
+      "command": "type",
+      "target": "css=div:nth-child(2) > .form-control",
+      "targets": [
+        ["css=div:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9a53379-8402-43cb-997b-a6ca123b0883",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(2) > div:nth-child(2)",
+      "targets": [
+        ["css=div:nth-child(2) > div:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3b98f89-15bb-429d-83fc-15ffe7ef2e09",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parentDiv",
+      "targets": [
+        ["css=.parentDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "caf49bd8-240d-4438-819b-d2185c9bdd67",
+      "comment": "",
+      "command": "type",
+      "target": "css=div:nth-child(4) > .form-control:nth-child(2)",
+      "targets": [
+        ["css=div:nth-child(4) > .form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "f08ad9eb-8226-4f43-aef5-d0e3f7666592",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control:nth-child(5)",
+      "targets": [
+        ["css=.form-control:nth-child(5)", "css:finder"],
+        ["xpath=(//input[@type='password'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c75ea49e-70f4-496f-bc7b-15c46fc2a6c7",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control:nth-child(5)",
+      "targets": [
+        ["css=.form-control:nth-child(5)", "css:finder"],
+        ["xpath=(//input[@type='password'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "a8077c4e-7b38-4f3d-906f-3bd94714a02a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/a/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5496248f-fdc0-4524-bdf2-ad08874cdc54",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "be0b3049-e61e-4b3a-ab1d-0ddb7f2920a1",
+    "name": "user_register_4",
+    "commands": [{
+      "id": "cb998f14-10a7-4928-b4c1-6cc709e48929",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/meethere/first",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "084817c0-2083-4d21-9e95-ccea87c71f26",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1249x814",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd5c56b1-d37e-4f72-aaba-64ad36781fc5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1fdccb6-f447-4612-9dec-93339e61e39a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=用户",
+      "targets": [
+        ["linkText=用户", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'用户')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8080/meethere/login']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'用户')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae3bc129-ab2c-4c45-8cf3-c064393c824d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=免费注册",
+      "targets": [
+        ["linkText=免费注册", "linkText"],
+        ["css=.pull-right", "css:finder"],
+        ["xpath=//a[contains(text(),'免费注册')]", "xpath:link"],
+        ["xpath=//div[@id='loginSmallDiv']/div[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'register')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'免费注册')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "18bc446d-a8b0-43fd-b957-af86a2b664a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.registerDiv",
+      "targets": [
+        ["css=.registerDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03eb0a5d-514f-41f3-b769-f4951373b094",
+      "comment": "",
+      "command": "type",
+      "target": "css=div:nth-child(2) > .form-control",
+      "targets": [
+        ["css=div:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "error"
+    }, {
+      "id": "948b8c0d-b6c0-4d3d-97af-4f66be790724",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parentDiv",
+      "targets": [
+        ["css=.parentDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "928fe3a8-a2ae-4048-b6f0-cb01ee9cf9fb",
+      "comment": "",
+      "command": "type",
+      "target": "css=div:nth-child(4) > .form-control:nth-child(2)",
+      "targets": [
+        ["css=div:nth-child(4) > .form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fd96b38-9ca4-4f62-96f2-076dfdd3bdcb",
+      "comment": "",
+      "command": "click",
+      "target": "css=img",
+      "targets": [
+        ["css=img", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "081b5be6-12b6-4224-b6f8-921740032ccf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control:nth-child(5)",
+      "targets": [
+        ["css=.form-control:nth-child(5)", "css:finder"],
+        ["xpath=(//input[@type='password'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "966845fb-c6ef-478f-9263-e69c23fe6250",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control:nth-child(5)",
+      "targets": [
+        ["css=.form-control:nth-child(5)", "css:finder"],
+        ["xpath=(//input[@type='password'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "6915126b-72ba-4c1f-914c-e434559b98bb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/a/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ccc5eb4-b439-4073-a125-100e60114e90",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9c2590b7-cfde-4cc4-b8dd-8b75c3798899",
+    "name": "user_register_5",
+    "commands": [{
+      "id": "61cc8012-9873-4e63-89eb-6a6450c56503",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/meethere/first",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44789915-1dcf-4671-95d5-32c9fee03a3a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1249x814",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3e87f09-cd3d-4693-b79f-9f088bbe2a9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=nav",
+      "targets": [
+        ["css=nav", "css:finder"],
+        ["xpath=//nav", "xpath:position"],
+        ["xpath=//nav[contains(.,'场馆预约')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0dfbd5e-c3dd-4590-8cc7-c658e4d21849",
+      "comment": "",
+      "command": "click",
+      "target": "css=nav",
+      "targets": [
+        ["css=nav", "css:finder"],
+        ["xpath=//nav", "xpath:position"],
+        ["xpath=//nav[contains(.,'场馆预约')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d3faeaf-8c66-467f-90b3-35f1495036c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfd0ad3b-cd45-4c9e-ac81-ef24092686b5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=用户",
+      "targets": [
+        ["linkText=用户", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'用户')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8080/meethere/login']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'用户')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f93357e8-c5ad-48d5-98db-f276a5a096ca",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=免费注册",
+      "targets": [
+        ["linkText=免费注册", "linkText"],
+        ["css=.pull-right", "css:finder"],
+        ["xpath=//a[contains(text(),'免费注册')]", "xpath:link"],
+        ["xpath=//div[@id='loginSmallDiv']/div[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'register')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'免费注册')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "957f8eec-4490-474b-9758-0765348d2777",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parentDiv",
+      "targets": [
+        ["css=.parentDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02a71167-2bff-4f10-bd63-0adce060f66c",
+      "comment": "",
+      "command": "type",
+      "target": "css=div:nth-child(2) > .form-control",
+      "targets": [
+        ["css=div:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "error"
+    }, {
+      "id": "e019f8c4-9200-488a-86de-e0ac96deec77",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parentDiv",
+      "targets": [
+        ["css=.parentDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d2bfdfb-5808-41e4-85da-cd3c5cf2696f",
+      "comment": "",
+      "command": "type",
+      "target": "css=div:nth-child(4) > .form-control:nth-child(2)",
+      "targets": [
+        ["css=div:nth-child(4) > .form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "f8b4b256-3a77-4f0e-8c46-6223c173e39b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/a/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "caeea2c5-d2b2-4d62-8a9d-60f54cbdb09e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8add7595-c4b1-4aad-9579-da43dace33d4",
+    "name": "user_register_6",
+    "commands": [{
+      "id": "5489846c-2139-45de-95df-b2c264103948",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/meethere/first",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f4d13d4-cd80-49f3-9564-c2c384d34fde",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1249x814",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82a6ae06-7fe3-4239-bc1a-a86115b9b283",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c456f3d-345e-4ab3-9ce1-1703f0349aeb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=用户",
+      "targets": [
+        ["linkText=用户", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'用户')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8080/meethere/login']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'用户')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bc476d0-2a22-4454-83b1-f4a8873e4f45",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=免费注册",
+      "targets": [
+        ["linkText=免费注册", "linkText"],
+        ["css=.pull-right", "css:finder"],
+        ["xpath=//a[contains(text(),'免费注册')]", "xpath:link"],
+        ["xpath=//div[@id='loginSmallDiv']/div[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'register')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'免费注册')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "50bece94-b6cb-4891-a30f-5ea4bb3fdc64",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control:nth-child(5)",
+      "targets": [
+        ["css=.form-control:nth-child(5)", "css:finder"],
+        ["xpath=(//input[@type='password'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb12675e-06f5-4db5-a65d-f7be98f57716",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control:nth-child(5)",
+      "targets": [
+        ["css=.form-control:nth-child(5)", "css:finder"],
+        ["xpath=(//input[@type='password'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "3b74f5c1-e39a-474f-9c6e-147af982024a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/a/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fda48ceb-38d3-4843-9ea5-c12178e35722",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=img",
+      "targets": [
+        ["css=img", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": "406,345"
+    }, {
+      "id": "06b4c933-37ed-4ee3-a650-8af96b2c205d",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=img",
+      "targets": [
+        ["css=img", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": "406,345"
+    }, {
+      "id": "c7c59b0f-3007-47fa-9c72-31ba1328192c",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=img",
+      "targets": [
+        ["css=img", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": "406,345"
+    }, {
+      "id": "a0285a4f-1f75-44ac-9765-33a8f97f304a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parentDiv",
+      "targets": [
+        ["css=.parentDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80543f79-e731-47a3-86d7-2da8c9e48376",
+      "comment": "",
+      "command": "type",
+      "target": "css=div:nth-child(4) > .form-control:nth-child(2)",
+      "targets": [
+        ["css=div:nth-child(4) > .form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "26ecb083-765f-4558-9de9-c78e469c78c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div/div[2]/div/div[2]/div[2]/a/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "753010b5-317e-48f9-bad0-e0c113a00951",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d4588446-14b7-4f46-aaf1-001f9db4e3de",
+    "name": "user_login_1",
+    "commands": [{
+      "id": "e1175afc-519a-45a4-9308-11cc73a6924d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/meethere/first",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "789fa772-7db5-48cb-856e-ef8dcfbca0eb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1249x814",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "665edf00-4fc7-442c-ac85-317a3b1dcfca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c5f68f9-3fa2-448c-8b1c-573ad4af4057",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=用户",
+      "targets": [
+        ["linkText=用户", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'用户')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8080/meethere/login']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'用户')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3a36c14-acfc-486d-8ad1-a3256c80f159",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parentDiv",
+      "targets": [
+        ["css=.parentDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f289835c-bdf5-4aa3-a2ea-a0dea48cea80",
+      "comment": "",
+      "command": "type",
+      "target": "css=.loginInput:nth-child(3) > input",
+      "targets": [
+        ["css=.loginInput:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "f5ae9891-f124-49fc-956b-0e85021b924c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parentDiv",
+      "targets": [
+        ["css=.parentDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "177857a1-c454-42ac-bc53-32953e9f6c53",
+      "comment": "",
+      "command": "type",
+      "target": "css=.loginInput:nth-child(4) > input",
+      "targets": [
+        ["css=.loginInput:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "03b32737-d688-4226-9d9a-1c189ee0caef",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.loginInput:nth-child(4) > input",
+      "targets": [
+        ["css=.loginInput:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "080d13fd-29d9-4a5e-82ce-5b830209621b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'登录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f05bffa7-3b0e-438b-a8c6-0dfd46dcfd57",
+      "comment": "",
+      "command": "click",
+      "target": "css=.loginInput:nth-child(3) > input",
+      "targets": [
+        ["css=.loginInput:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "913e3486-7f5c-43e6-b556-699c09b06a26",
+      "comment": "",
+      "command": "type",
+      "target": "css=.loginInput:nth-child(3) > input",
+      "targets": [
+        ["css=.loginInput:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test1"
+    }, {
+      "id": "4c3d3b59-17a6-4058-9fda-3a69cfd703df",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'登录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3361c4f-c34f-4114-bbaf-fcb774c5ec3a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "778287a5-559c-4bcb-8e04-7f9f230eb1ff",
+    "name": "user_login_2",
+    "commands": [{
+      "id": "788ab871-41d6-4a91-87e3-893dd9fa1824",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/meethere/first",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a606bc3e-2a8a-4e71-ae90-27f96c5e3f18",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1249x814",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c284d801-c4ba-474a-9f88-044acc1bdf78",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a8e024c-315d-4d05-a36d-c25c3cf06550",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'用户')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5579e02-716f-4f62-974a-6d356ce3ae12",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=用户",
+      "targets": [
+        ["linkText=用户", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'用户')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8080/meethere/login']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'用户')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4807ef8f-fd3b-433d-ab99-83dc345a57d5",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.loginInput:nth-child(3) > input",
+      "targets": [
+        ["css=.loginInput:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "40.859375,7"
+    }, {
+      "id": "68fa0694-b794-4db1-824d-48f79f737d69",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.loginInput:nth-child(3) > input",
+      "targets": [
+        ["css=.loginInput:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "40.859375,7"
+    }, {
+      "id": "6945ca77-1759-4709-87d4-d5d64cab125e",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.loginInput:nth-child(3) > input",
+      "targets": [
+        ["css=.loginInput:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "40.859375,7"
+    }, {
+      "id": "8e751fab-a6d2-46d0-8596-4817e57fbcd0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.loginInput:nth-child(3) > input",
+      "targets": [
+        ["css=.loginInput:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4d89509-e42b-48cc-b9f3-c00edb7a89a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parentDiv",
+      "targets": [
+        ["css=.parentDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf8435af-a757-4279-8a26-a8234b0c7abc",
+      "comment": "",
+      "command": "type",
+      "target": "css=.loginInput:nth-child(3) > input",
+      "targets": [
+        ["css=.loginInput:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test1"
+    }, {
+      "id": "c6352e0e-7261-45c6-866a-918e845bc130",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parentDiv",
+      "targets": [
+        ["css=.parentDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fffbd349-d8da-43ab-a5c6-2d77c4e64622",
+      "comment": "",
+      "command": "type",
+      "target": "css=.loginInput:nth-child(4) > input",
+      "targets": [
+        ["css=.loginInput:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "6c608adf-1933-4d68-910e-77d5320ac89e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'登录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3791f1de-f4d1-4e6c-ab9d-149dfa88adf8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3d691b56-e598-430d-8f0f-2fadcd138fd4",
+    "name": "user_login_3",
+    "commands": [{
+      "id": "ea62fa0e-1bee-4e99-a159-e3e47ee5806f",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/meethere/first",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5d3743e-2bdc-48e8-88b7-303479fd1bd8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1249x814",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4fe0fdc4-6ab9-45e3-b5fb-78d4af4ffd31",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd5856e4-0e59-4670-a55f-ebcca50f17fa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=用户",
+      "targets": [
+        ["linkText=用户", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'用户')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8080/meethere/login']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'用户')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da1c6a41-f3b3-411f-94c3-4a254cda6d20",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginSmallDiv",
+      "targets": [
+        ["id=loginSmallDiv", "id"],
+        ["css=#loginSmallDiv", "css:finder"],
+        ["xpath=//div[@id='loginSmallDiv']", "xpath:attributes"],
+        ["xpath=//div[@id='loginDiv']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be401d4f-be83-47a6-a34e-e82545e1f02e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.loginInput:nth-child(3) > input",
+      "targets": [
+        ["css=.loginInput:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "error"
+    }, {
+      "id": "2a80a47d-9f92-4210-b86f-dc3b2a6fe58d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'登录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ac98cd3-66c7-4b23-8811-dc542e3c68bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.loginInput:nth-child(3) > input",
+      "targets": [
+        ["css=.loginInput:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6fd371a-8d01-4091-ba88-53c3b99dd7b3",
+      "comment": "",
+      "command": "type",
+      "target": "css=.loginInput:nth-child(3) > input",
+      "targets": [
+        ["css=.loginInput:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "error1"
+    }, {
+      "id": "de8a233c-e58b-48d3-9457-52bceb61be6a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'登录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca4a7aed-e2ee-4d32-8f9d-655f00b9a8f6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c70f067d-1a87-473a-a6ef-f4109324a8f3",
+    "name": "user_login_4",
+    "commands": [{
+      "id": "ecd6d622-a154-41ac-b151-9abab0d12154",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/meethere/first",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "853b1be7-8bbb-44bf-a81e-c7682e287cf6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1249x814",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee269604-2511-4c38-acc2-ca37886501b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcbd21d3-5e23-4eef-94ac-c572165ab67f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=用户",
+      "targets": [
+        ["linkText=用户", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'用户')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8080/meethere/login']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'用户')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b1dd00b-549d-4f6b-b915-295a198e5386",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginSmallDiv",
+      "targets": [
+        ["id=loginSmallDiv", "id"],
+        ["css=#loginSmallDiv", "css:finder"],
+        ["xpath=//div[@id='loginSmallDiv']", "xpath:attributes"],
+        ["xpath=//div[@id='loginDiv']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8a76a47-2c12-471c-9f1c-ec945728c2f2",
+      "comment": "",
+      "command": "type",
+      "target": "css=.loginInput:nth-child(3) > input",
+      "targets": [
+        ["css=.loginInput:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53949c06-5862-4447-b330-9a61fd7d5737",
+      "comment": "",
+      "command": "click",
+      "target": "css=video",
+      "targets": [
+        ["css=video", "css:finder"],
+        ["xpath=//div[@id='video-container']/video", "xpath:idRelative"],
+        ["xpath=//video", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7804ae87-bdd6-4caf-af16-a3f9480ce896",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parentDiv",
+      "targets": [
+        ["css=.parentDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3dd96bb-60db-4a86-a4d0-06de4a91d397",
+      "comment": "",
+      "command": "type",
+      "target": "css=.loginInput:nth-child(4) > input",
+      "targets": [
+        ["css=.loginInput:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "d07f2706-4b3d-4d62-839b-3114d38d8f10",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(6)",
+      "targets": [
+        ["css=div:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='loginSmallDiv']/div[6]", "xpath:idRelative"],
+        ["xpath=//div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05cb28f1-4cc8-4b4a-88da-fdb90df49a9e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'登录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0913d6a-cd18-4579-95be-5e4d5b5f50eb",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6103cf7f-cdd5-4181-b7d2-4dd7cfe45624",
+    "name": "user_login_5",
+    "commands": [{
+      "id": "40481c49-c328-4210-b12b-29f7fec2d3c4",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/meethere/first",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "240e727f-6f97-44bd-a5ae-21f4ac346b4d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1249x814",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1234b944-a6dc-4955-b133-3a095312f379",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon > span",
+      "targets": [
+        ["css=.menu-icon > span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f2fc5aa-dccc-4797-9987-a7d9d7a9bb94",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=用户",
+      "targets": [
+        ["linkText=用户", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'用户')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8080/meethere/login']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'用户')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08d3d899-9d0d-4221-9aee-4079e2cc12d7",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginSmallDiv",
+      "targets": [
+        ["id=loginSmallDiv", "id"],
+        ["css=#loginSmallDiv", "css:finder"],
+        ["xpath=//div[@id='loginSmallDiv']", "xpath:attributes"],
+        ["xpath=//div[@id='loginDiv']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76e6d541-caa2-49cb-82f8-1c46fe4d4a47",
+      "comment": "",
+      "command": "type",
+      "target": "css=.loginInput:nth-child(3) > input",
+      "targets": [
+        ["css=.loginInput:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test1"
+    }, {
+      "id": "ae14a784-21ce-49c3-b01d-53d357882cd9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parentDiv",
+      "targets": [
+        ["css=.parentDiv", "css:finder"],
+        ["xpath=//div[@id='workingArea']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4236ca15-0050-45ef-ac1c-8d5891f43c2c",
+      "comment": "",
+      "command": "type",
+      "target": "css=.loginInput:nth-child(4) > input",
+      "targets": [
+        ["css=.loginInput:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87cd529a-882d-4502-b6d6-61f50a38a4bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='loginSmallDiv']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'登录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "02338aac-ea04-46c6-a1b4-5c2fcd2c2c62",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "682432a4-e4dc-4953-b95d-0234098b39ae",
+    "name": "user_login_6",
+    "commands": [{
+      "id": "f8bcad9d-f930-4ce1-a7c6-15a6d70bb689",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/meethere/first",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6546c4b8-bc25-4756-ba5e-5d018fb39e5e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1249x814",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f84fa99-ec8e-482f-854b-c75bf13e7444",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-icon",
+      "targets": [
+        ["css=.menu-icon", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72f28b81-c41b-4b07-9cdc-4a1fa57fce26",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=用户",
+      "targets": [
+        ["linkText=用户", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'用户')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8080/meethere/login']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'用户')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cadcb2ac-4480-4809-8d79-474de378a848",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=免费注册",
+      "targets": [
+        ["linkText=免费注册", "linkText"],
+        ["css=.pull-right", "css:finder"],
+        ["xpath=//a[contains(text(),'免费注册')]", "xpath:link"],
+        ["xpath=//div[@id='loginSmallDiv']/div[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'register')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'免费注册')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebdd5497-b8fa-41ad-babd-bd1118e4eb80",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d4282c2b-dde3-4bd7-b5f4-26a08d2287e7",
+    "name": "user",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3013e794-f992-40c5-8833-8a7fafdc8ba2", "b2800f64-1c77-40f1-8c22-7c799c8ddef0", "cee97da3-2c27-41ba-a5a7-ba80eb6da707", "17e0319f-e715-4ac2-b1da-e8be5b7b095a", "0e26766b-1e9a-43b4-b98d-ff6f5760f6d4"]
+  }, {
+    "id": "db822bd5-081f-48eb-abf3-ba9832a109c8",
+    "name": "admin",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["297af91f-5b04-4549-a6ef-48798b632fe2", "a5407df0-f7e3-4ccd-affe-7f53c05b0143", "76548944-3244-47bb-b820-0f683aac1d66"]
+  }, {
+    "id": "3911fa1b-f67c-4717-b5ee-b13ee9ac24c9",
+    "name": "user_register",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a84f4529-b4c4-4afc-a2ca-c13213eecda8", "8d0bbb58-f101-4812-bd82-96324e7188bf", "f7840b47-2e88-4d69-ab73-390ee1a8c410", "be0b3049-e61e-4b3a-ab1d-0ddb7f2920a1", "9c2590b7-cfde-4cc4-b8dd-8b75c3798899", "8add7595-c4b1-4aad-9579-da43dace33d4"]
+  }, {
+    "id": "e9ac1c72-2845-4648-83bc-9d95a11670e7",
+    "name": "user_login",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6103cf7f-cdd5-4181-b7d2-4dd7cfe45624", "c70f067d-1a87-473a-a6ef-f4109324a8f3", "682432a4-e4dc-4953-b95d-0234098b39ae", "778287a5-559c-4bcb-8e04-7f9f230eb1ff", "d4588446-14b7-4f46-aaf1-001f9db4e3de", "3d691b56-e598-430d-8f0f-2fadcd138fd4"]
+  }],
+  "urls": ["http://localhost:8080/", "http://localhost:8080/meethere"],
+  "plugins": []
+}
